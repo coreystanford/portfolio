@@ -5,27 +5,42 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: 'views/home.html',
+            views: {
+                'header': { templateUrl: 'views/home.html' },
+                'content': { templateUrl: 'views/gallery.html' }
+            },
             controller: 'PortfolioController'
         })
         .state('about', {
             url: '/about',
-            templateUrl: 'views/about.html',
+            views: {
+                'header': { templateUrl: 'views/inner.html' },
+                'content': { templateUrl: 'views/about.html' }
+            },
             controller: 'PortfolioController'     
         })
         .state('contact', {
             url: '/contact',
-            templateUrl: 'views/contact.html',
+            views: {
+                'header': { templateUrl: 'views/inner.html' },
+                'content': { templateUrl: 'views/contact.html' }
+            },
             controller: 'PortfolioController'     
         })
         .state('case', {
             url: '/case/:id',
-            templateUrl: 'views/case.html',
+            views: {
+                'header': { templateUrl: 'views/inner.html' },
+                'content': { templateUrl: 'views/case.html' }
+            },
             controller: 'PortfolioController'     
         })
         .state('404', {
             url: '/404',
-            templateUrl: 'views/404.html',
+            views: {
+                'header': { templateUrl: 'views/inner.html' },
+                'content': { templateUrl: 'views/404.html' }
+            },
             controller: 'PortfolioController'     
         });
 
