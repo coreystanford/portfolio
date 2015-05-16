@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	font-family: 'Roboto Slab', serif;
 	line-height: 1;
-	color: #333;
+	color: #505050;
 }
 ol, ul {
 	list-style: none;
@@ -51,7 +51,7 @@ table {
 
 a {
 	text-decoration: none;
-	color: #333;
+	color: #505050;
 }
 
 h1 { font-size: 2em; }
@@ -103,14 +103,15 @@ nav h4 {
 	left: 10%;
 	padding: 20px;
 	border: 2px solid #505050;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
 }
 
 #home-wrap h1 {
 	font-size: 3.8em;
-}
-
-#home-wrap a {
-	color: #505050;
 }
 
 #home-wrap:hover {
@@ -144,6 +145,11 @@ video#bgvid {
 	font-size: 1.7em;
 	padding: 10px 15px;
 	border: 2px solid #505050;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
 }
 
 #workBtn:hover {
@@ -154,13 +160,17 @@ video#bgvid {
 /* ----- INNER HEADER ----- */
 
 #inner {
-	min-height: 100px;
+	min-height: 200px;
 	background: url('/portfolio/images/bg.jpg');
 	position: relative;
 }
 
 #inner-wrap {
-	padding: 50px 0 40px 10%;
+	position: absolute;
+	top: 50px;
+	left: 10%;
+	padding: 20px;
+	border: 2px solid #505050;
 }
 
 #inner-wrap a {
@@ -191,6 +201,11 @@ video#bgvid {
 
 .case img {
 	width: 100%;
+	-webkit-transition: all .05s ease-in-out;
+	-moz-transition: all .05s ease-in-out;
+	-ms-transition: all .05s ease-in-out;
+	-o-transition: all .05s ease-in-out;
+	transition: all .05s ease-in-out;
 }
 
 .case img:hover {

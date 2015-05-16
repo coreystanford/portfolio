@@ -30,13 +30,56 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                 			controller: 'ContactController' }
             }
         })
-        .state('case', {
-            url: '/case/:id',
+        .state('vancityparks', {
+            url: '/vancityparks',
             views: {
                 'header': { templateUrl: 'views/inner.html', 
-                			controller: 'PortfolioController' },
-                'content': { templateUrl: 'views/case.html', 
+                			controller: function ($scope) {
+                                    $scope.title = 'VanCityParks';
+                                    $scope.constant = 'VanCityParks';
+                                }
+                            },
+                'content': { templateUrl: 'views/vancityparks.html', 
                 			controller: 'PortfolioController' }
+            }   
+        })
+        .state('jibe', {
+            url: '/jibe',
+            views: {
+                'header': { templateUrl: 'views/inner.html', 
+                            controller: function ($scope) {
+                                    $scope.title = 'JIBE';
+                                    $scope.constant = 'JIBE';
+                                }
+                            },
+                'content': { templateUrl: 'views/jibe.html', 
+                            controller: 'PortfolioController' }
+            }   
+        })
+        .state('mics', {
+            url: '/mics',
+            views: {
+                'header': { templateUrl: 'views/inner.html', 
+                            controller: function ($scope) {
+                                    $scope.title = 'MICs Group';
+                                    $scope.constant = 'MICs Group';
+                                }
+                            },
+                'content': { templateUrl: 'views/mics.html', 
+                            controller: 'PortfolioController' }
+            }   
+        })
+        .state('glassbellows', {
+            url: '/glassbellows',
+            views: {
+                'header': { templateUrl: 'views/inner.html', 
+                            controller: function ($scope) {
+                                    $scope.title = 'Glass + Bellows';
+                                    $scope.constant = 'Glass + Bellows';
+                                }
+                            },
+                'content': { templateUrl: 'views/glassbellows.html', 
+                            controller: 'PortfolioController' }
             }   
         })
         .state('404', {
