@@ -49,59 +49,6 @@ table {
 	border-spacing: 0;
 }
 
-a {
-	text-decoration: none;
-	color: #333;
-}
-
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
-
-/* ----- GENERAL STYLING ----- */
-
-header, main, footer {
-	width: 100%;
-}
-
-nav h4 {
-	display: inline-block;
-	margin: 10px 5px;
-}
-
-/* ----- HOME HEADER ----- */
-
-#home {
-	min-height: 500px;
-	margin: 0 0 20px 0;
-}
-
-#home-wrap {
-	margin: 200px 0 0 10%;
-}
-
-#home-wrap h1 {
-	font-size: 3.5em;
-}
-
-/* ----- INNER HEADER ----- */
-
-#inner {
-	min-height: 100px;
-	margin: 0 0 20px 0;
-}
-
-#inner-wrap {
-	margin: 50px 0 0 10%;
-}
-
-#inner-wrap h1 {
-	font-size: 3.5em;
-}
-
 
 
 
