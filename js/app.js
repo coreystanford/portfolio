@@ -7,7 +7,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
             url: '/',
             views: {
                 'header': { templateUrl: 'views/home.html', 
-                			controller: 'PortfolioController' },
+                			controller: 'HomeController' },
                 'content': { templateUrl: 'views/gallery.html', 
                 			controller: 'PortfolioController' }
             }

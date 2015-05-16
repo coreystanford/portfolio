@@ -77,14 +77,46 @@ nav h4 {
 #home {
 	min-height: 500px;
 	margin: 0 0 20px 0;
+	position: relative;
+}
+
+#home:before {
+  content: "";
+  background: url('/portfolio/images/bg.jpg');
+  opacity: 0.65;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 #home-wrap {
-	margin: 200px 0 0 10%;
+	padding: 200px 0 0 10%;
 }
 
 #home-wrap h1 {
 	font-size: 3.5em;
+}
+
+#home-wrap a {
+	color: #505050;
+}
+
+video#bgvid {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url('/portfolio/images/home-video.jpg') no-repeat;
+	background-size: cover;
 }
 
 /* ----- INNER HEADER ----- */
@@ -92,25 +124,79 @@ nav h4 {
 #inner {
 	min-height: 100px;
 	margin: 0 0 20px 0;
+	background: url('/portfolio/images/bg.jpg');
+	position: relative;
 }
 
 #inner-wrap {
-	margin: 50px 0 0 10%;
+	padding: 50px 0 0 10%;
+}
+
+#inner-wrap a {
+	color: #505050;
 }
 
 #inner-wrap h1 {
 	font-size: 3.5em;
 }
 
+/* ----- INNER CONTENT ----- */
+
+.content-wrap {
+	margin: 30px 10%;
+}
+
+.case-one {
+
+}
+
+.case-two {
+
+}
+
+/* ----- FOOTER ----- */
+
+footer p {
+	margin: height: 30px;
+	line-height: 30px;
+	margin: 0 10%;
+}
 
 
 
 
 
+.animateheading:before { 
+ margin-right: .3em; 
+ -webkit-animation: lineleft 3s linear 1s forwards; 
+ -moz-animation: lineleft 3s linear 1s forwards; 
+ animation: lineleft 3s linear 1s forwards; 
+}
 
+.animateheading:after  { 
+  margin-left: .3em;
+ -webkit-animation: lineright 3s linear 1s forwards; 
+ -moz-animation: lineright 3s linear 1s forwards; 
+ animation: lineright 3s linear 1s forwards; 
+} 
 
+@-webkit-keyframes lineleft {
+  from { -webkit-transform: translate(0, 0); }
+  to { -webkit-transform: translate(-100%, 0); }
+}
+@keyframes lineleft {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-100%, 0); }
+}
 
-
+@-webkit-keyframes lineright {
+  from { -webkit-transform: translate(0, 0); }
+  to { -webkit-transform: translate(100%, 0); }
+}
+@keyframes lineright {
+  from { transform: translate(0, 0); }
+  to { transform: translate(100%, 0); }
+}
 
 
 

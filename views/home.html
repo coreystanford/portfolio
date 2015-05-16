@@ -1,9 +1,13 @@
-<div id="home">
+<div id="home" resizable ng-style="resizeHeight">
 	<div id="home-wrap">
 		<h1><a ui-sref="home">Corey Stanford</a></h1>
-		<nav>
+		<nav ng-style="navStyle">
 			<h4><a ui-sref="about">About</a></h4>
 			<h4><a ui-sref="contact">Contact</a></h4>
 		</nav>
 	</div>
+	<video autoplay loop poster="images/home-video.jpg" id="bgvid">
+		<source src="videos/home-video.webm" type="video/webm">
+		<source src="videos/home-video.mp4" type="video/mp4">
+	</video>
 </div>
