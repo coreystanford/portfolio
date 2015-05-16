@@ -76,8 +76,8 @@ nav h4 {
 
 #home {
 	min-height: 500px;
-	margin: 0 0 20px 0;
 	position: relative;
+	overflow: hidden;
 }
 
 #home:before {
@@ -123,13 +123,12 @@ video#bgvid {
 
 #inner {
 	min-height: 100px;
-	margin: 0 0 20px 0;
 	background: url('/portfolio/images/bg.jpg');
 	position: relative;
 }
 
 #inner-wrap {
-	padding: 50px 0 0 10%;
+	padding: 50px 0 40px 10%;
 }
 
 #inner-wrap a {
@@ -144,6 +143,12 @@ video#bgvid {
 
 .content-wrap {
 	margin: 30px 10%;
+	min-height: 400px;
+}
+
+#gallery-wrap {
+	padding: 20px 0 0 0;
+	min-height: 500px;
 }
 
 .case-one {
