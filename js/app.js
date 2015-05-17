@@ -1,4 +1,4 @@
-var myPortfolio = angular.module('myPortfolio', ['ui.router']);
+var myPortfolio = angular.module('myPortfolio', ['ui.router', 'ngAnimate']);
 
 myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 

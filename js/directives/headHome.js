@@ -2,7 +2,7 @@
 myPortfolio.directive('headHome', function() {
       return {
          link : function($scope, element, attrs) {
-            console.log($scope);
+          
             element.parent().bind('mouseenter', function() {
                 if($scope.title == 'Home'){
                   $scope.title = $scope.constant;

@@ -63,6 +63,10 @@ h6 { font-size: .75em; }
 
 /* ----- GENERAL STYLING ----- */
 
+body {
+	position: relative;
+}
+
 header, main, footer {
 	width: 100%;
 }
@@ -83,6 +87,8 @@ nav h4 {
 	min-height: 500px;
 	position: relative;
 	overflow: hidden;
+	animation-duration: .5s;
+	animation-iteration-count: 1;
 }
 
 #home:before {
@@ -222,40 +228,31 @@ footer p {
 }
 
 
-
-
-
-.animateheading:before { 
- margin-right: .3em; 
- -webkit-animation: lineleft 3s linear 1s forwards; 
- -moz-animation: lineleft 3s linear 1s forwards; 
- animation: lineleft 3s linear 1s forwards; 
+#uiHeader.ng-enter {
+	-webkit-animation: slideInRight 1s;
+	-moz-animation: slideInRight 1s;
+	-o-animation: slideInRight 1s;
+	animation: slideInRight 1s;
 }
 
-.animateheading:after  { 
-  margin-left: .3em;
- -webkit-animation: lineright 3s linear 1s forwards; 
- -moz-animation: lineright 3s linear 1s forwards; 
- animation: lineright 3s linear 1s forwards; 
-} 
-
-@-webkit-keyframes lineleft {
-  from { -webkit-transform: translate(0, 0); }
-  to { -webkit-transform: translate(-100%, 0); }
+#uiHeader.ng-leave {
+	-webkit-animation: slideOutUp 1s;
+	-moz-animation: slideOutUp 1s;
+	-o-animation: slideOutUp 1s;
+	animation: slideOutUp 1s;
 }
-@keyframes lineleft {
-  from { transform: translate(0, 0); }
-  to { transform: translate(-100%, 0); }
+	
+#uiContent.ng-enter {
+	-webkit-animation: slideInRight 1s;
+	-moz-animation: slideInRight 1s;
+	-o-animation: slideInRight 1s;
+	animation: slideInRight 1s;
 }
 
-@-webkit-keyframes lineright {
-  from { -webkit-transform: translate(0, 0); }
-  to { -webkit-transform: translate(100%, 0); }
+#uiContent.ng-leave {
+	-webkit-animation: slideOutLeft 1s;
+	-moz-animation: slideOutLeft 1s;
+	-o-animation: slideOutLeft 1s;
+	animation: slideOutLeft 1s;
 }
-@keyframes lineright {
-  from { transform: translate(0, 0); }
-  to { transform: translate(100%, 0); }
-}
-
-
 

@@ -8,20 +8,22 @@
     <!-- Font -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
     <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
     <!-- AngularJS -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
 </head>
 <body>
 
 	<header>
-		<div ui-view="header" autoscroll="false"></div>
+		<div ui-view="header" autoscroll="false" id="uiHeader"></div>
 	</header><!-- /header -->
 
 	<main>
-		<div ui-view="content" autoscroll="false"></div>
+		<div ui-view="content" autoscroll="false" id="uiContent"></div>
 	</main><!-- /main -->
 
 	<footer>
