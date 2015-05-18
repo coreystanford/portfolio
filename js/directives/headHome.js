@@ -4,20 +4,21 @@ myPortfolio.directive('headHome', function() {
          link : function($scope, element, attrs) {
           
             element.parent().bind('mouseenter', function() {
-                if($scope.title == 'Home'){
-                  $scope.title = $scope.constant;
+                if(!$scope.titleSwitch){
+                  $scope.titleSwitch = true;
                   return $scope.$apply();
                 } else {
-                  $scope.title = 'Home';
+                  $scope.titleSwitch = false;
                   return $scope.$apply();
                 }
             });
+            
             element.parent().bind('mouseleave', function() {
-                if($scope.title == 'Home'){
-                  $scope.title = $scope.constant;
+                if(!$scope.titleSwitch){
+                  $scope.titleSwitch = true;
                   return $scope.$apply();
                 } else {
-                  $scope.title = 'Home';
+                  $scope.titleSwitch = false;
                   return $scope.$apply();
                 }
             });

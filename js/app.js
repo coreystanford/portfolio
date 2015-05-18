@@ -1,4 +1,4 @@
-var myPortfolio = angular.module('myPortfolio', ['ui.router', 'ngAnimate']);
+var myPortfolio = angular.module('myPortfolio', ['ui.router']);
 
 myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
@@ -36,7 +36,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                 'header': { templateUrl: 'views/inner.html', 
                 			controller: function ($scope) {
                                     $scope.title = 'VanCityParks';
-                                    $scope.constant = 'VanCityParks';
+                                    $scope.titleSwitch = true;
                                 }
                             },
                 'content': { templateUrl: 'views/vancityparks.html', 
@@ -49,7 +49,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                 'header': { templateUrl: 'views/inner.html', 
                             controller: function ($scope) {
                                     $scope.title = 'JIBE';
-                                    $scope.constant = 'JIBE';
+                                    $scope.titleSwitch = true;
                                 }
                             },
                 'content': { templateUrl: 'views/jibe.html', 
@@ -62,7 +62,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                 'header': { templateUrl: 'views/inner.html', 
                             controller: function ($scope) {
                                     $scope.title = 'MICs Group';
-                                    $scope.constant = 'MICs Group';
+                                    $scope.titleSwitch = true;
                                 }
                             },
                 'content': { templateUrl: 'views/mics.html', 
@@ -75,7 +75,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                 'header': { templateUrl: 'views/inner.html', 
                             controller: function ($scope) {
                                     $scope.title = 'Glass + Bellows';
-                                    $scope.constant = 'Glass + Bellows';
+                                    $scope.titleSwitch = true;
                                 }
                             },
                 'content': { templateUrl: 'views/glassbellows.html', 
