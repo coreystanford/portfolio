@@ -32,6 +32,7 @@ body {
 	font-family: 'Roboto Slab', serif;
 	line-height: 1;
 	color: #505050;
+	overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -97,16 +98,20 @@ nav h4 {
 	animation-iteration-count: 1;
 }
 
-#home:before {
+#home:before, #case-header:after {
   content: "";
   background: url('/portfolio/images/bg.jpg');
-  opacity: 0.65;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;   
+}
+
+#case-header:after {
+	opacity: .85;
 }
 
 #home-wrap {
@@ -168,34 +173,97 @@ video#bgvid {
 #workBtn:hover {
 	background: #505050;
 	color: #fff;
+	cursor: pointer;
 }
 
-/* ----- INNER HEADER ----- */
+/* ----- CASE INNER HEADER ----- */
 
-#inner {
+#case-header {
 	min-height: 200px;
-	/*background: url('/portfolio/images/bg.jpg');*/
 	position: relative;
 }
 
-#inner-wrap {
+.bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	z-index: -1;
+}
+
+.vancity {
+	background-image: url('/portfolio/images/vancitybg.jpg');
+}
+.jibe {
+	background-image: url('/portfolio/images/jibebg.jpg');
+}
+.mics {
+	background-image: url('/portfolio/images/micsbg.jpg');
+}
+.glassbellows {
+	background-image: url('/portfolio/images/glassbellowsbg.jpg');
+}
+
+#case-header-wrap {
+	position: absolute;
+	top: 50px;
+	left: 10%;
+}
+
+#case-header-wrap a {
+	color: #505050;
+	padding: 20px;
+	border: 2px solid #505050;
+}
+
+#case-header-wrap h1 {
+	font-size: 3.5em;
+}
+
+#case-header-wrap a:hover {
+	background: #505050;
+	color: #fff;
+}
+
+#wrap-hover {
+	width: 100%;
+	position: absolute;
+	height: 200px;
+	top: 170px;
+}
+
+/* ----- STATIC INNER HEADER ----- */
+
+#static-header {
+	min-height: 200px;
+	position: relative;
+}
+
+#static-header-wrap {
 	position: absolute;
 	top: 50px;
 	left: 10%;
 	
 }
 
-#inner-wrap a {
+#static-header-wrap a {
 	color: #505050;
 	padding: 20px;
 	border: 2px solid #505050;
 }
 
-#inner-wrap h1 {
+#static-header-wrap h1 {
 	font-size: 3.5em;
 }
 
-#inner-wrap a:hover {
+#static-header-wrap a:hover {
 	background: #505050;
 	color: #fff;
 }
@@ -208,7 +276,7 @@ video#bgvid {
 	min-height: 400px;
 }
 
-.content-wrap {
+#case-content {
 	margin: 30px 10%;
 	min-height: 400px;
 }

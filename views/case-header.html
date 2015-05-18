@@ -1,0 +1,12 @@
+<div resizable id="case-header" ng-style="resizeHeight">
+	
+		<div id="wrap-hover" head-home>
+			<div id="case-header-wrap">
+				<h1 ng-show="titleSwitch"><a ui-sref="home">{{ title }}</a></h1>
+				<h1 ng-hide="titleSwitch"><a ui-sref="home">Return Home <i class='fa fa-home'></i></a></h1>
+				
+			</div>
+		</div>
+		<div class="bg" ng-class="caseBG"></div>
+		<a ng-click="gotoElement('uiContent')" id="workBtn">Scroll <i class="fa fa-chevron-down"></i></a>
+</div>

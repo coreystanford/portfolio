@@ -3,7 +3,7 @@ myPortfolio.directive('headHome', function() {
       return {
          link : function($scope, element, attrs) {
           
-            element.parent().bind('mouseenter', function() {
+            element.bind('mouseenter', function() {
                 if(!$scope.titleSwitch){
                   $scope.titleSwitch = true;
                   return $scope.$apply();
@@ -13,7 +13,7 @@ myPortfolio.directive('headHome', function() {
                 }
             });
             
-            element.parent().bind('mouseleave', function() {
+            element.bind('mouseleave', function() {
                 if(!$scope.titleSwitch){
                   $scope.titleSwitch = true;
                   return $scope.$apply();

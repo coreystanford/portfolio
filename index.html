@@ -14,8 +14,9 @@
     <!-- AngularJS -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    
 </head>
-<body>
+<body id="start">
 
 	<header>
 		<div ui-view="header" autoscroll="false" id="uiHeader"></div>
@@ -32,15 +33,12 @@
 	<!-- Module -->
 	<script src="js/app.js"></script>
 	<!-- Controllers -->
-	<script src="js/controllers/aboutcontroller.js"></script>
-	<script src="js/controllers/contactcontroller.js"></script>
-	<script src="js/controllers/homecontroller.js"></script>
-	<script src="js/controllers/portfoliocontroller.js"></script>
+	
 	<!-- Services -->
-
+	<script src="js/services/smoothAnchorScroll.js"></script>
 	<!-- Directives -->
 	<script src="js/directives/resizable.js"></script>
-	<script src="js/directives/hidenav.js"></script>
-	<script src="js/directives/headhome.js"></script>
+	<script src="js/directives/hideNav.js"></script>
+	<script src="js/directives/headHome.js"></script>
 </body>
 </html>

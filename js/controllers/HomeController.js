@@ -1,5 +1,4 @@
-myPortfolio.controller("HomeController" ,function ($scope, $window) {
+myPortfolio.controller("HomeController" ,function ($scope, $location, smoothAnchorScroll) {
 
-	
 
 });
