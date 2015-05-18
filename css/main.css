@@ -60,7 +60,7 @@ h3 { font-size: 1.17em; line-height: 1.3; }
 h4 { font-size: 1.12em; line-height: 1.2; }
 h5 { font-size: .83em; line-height: 1.2; }
 h6 { font-size: .75em; line-height: 1.2; }
-p { line-height: 1.1; }
+p { line-height: 1.2; }
 
 .clearfix:after {
 	visibility: hidden;
@@ -207,7 +207,7 @@ video#bgvid {
 }
 
 #gallery-wrap {
-	min-height: 500px;
+	
 }
 
 .case { 
@@ -254,6 +254,8 @@ video#bgvid {
 	text-align: center;
 	opacity: 0;
 	z-index: -1;
+	letter-spacing: 1px;
+	line-height: 1.4;
 }
 
 .case a:hover h2 {
@@ -299,7 +301,15 @@ footer p {
 
 
 
+/* ----- RESPONSIVE ----- */
 
+@media only screen and (max-width: 48em)
+{
 
+	.case {
+		width: 100%;
+	}
+
+}
 
 
