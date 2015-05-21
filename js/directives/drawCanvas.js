@@ -2,10 +2,11 @@ myPortfolio.directive('drawCanvas', ['$window', '$rootScope', function($window, 
     return {
     	restrict: 'A',
         scope: {
-          canvasId: '@',
-          offset: '@'
+          canvasId: '@'
         },
         link : function($scope, element, attrs) {
+
+        	// http://jsfiddle.net/m1erickson/hzNg4/
 
         	var canvas = document.getElementById($scope.canvasId);
 			var ctx = canvas.getContext("2d");
