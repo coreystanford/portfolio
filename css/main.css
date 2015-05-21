@@ -84,14 +84,76 @@ main {
 	background-color: #fff;
 }
 
+#page-wrap {
+	position: relative;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
 nav {
-	padding: 5px 0 0 0;
-	text-align: right;
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	top: -60px;
+	right: 0;
+	left: 0;
+	display: table;
+	z-index: 5;
+	border-bottom: 2px solid #505050;
+	background: #fff;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
 }
 
 nav h4 {
-	display: inline-block;
-	margin: 10px 5px 0px 5px;
+	display: table-cell;
+	text-align: center;
+	width: 25%;
+	position: relative;
+}
+
+nav h4 a {
+	line-height: 60px;
+	height: 60px;
+	width: 100%;
+	color: #505050;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+nav h4 a:hover {
+	background: #505050;
+	color: #fff!important;
+}
+
+
+
+#menuBtn {
+	height: 62px;
+	width: 62px;
+	position: absolute;
+	top: 42px;
+	right: 10%;
+	border: 2px solid #505050;
+	background: #505050;
+	color: #fff;
+	z-index: 10;
+	line-height: 70px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#menuBtn:hover {
+	border: 2px solid #fff;
 }
 
 /* ----- HOME HEADER ----- */
@@ -110,7 +172,7 @@ canvas {
 
 #patternOverlay:before {
   content: "";
-  background: url('/portfolio/images/bg.jpg');
+  background: url('../images/bg.jpg');
   opacity: 0.6;
   top: 0;
   left: 0;
@@ -125,6 +187,8 @@ canvas {
 	left: 10%;
 	padding: 20px;
 	border: 2px solid #505050;
+	background: #fff;
+	opacity: .85;
 	-webkit-transition: background .1s ease-in-out;
 	-moz-transition: background .1s ease-in-out;
 	-ms-transition: background .1s ease-in-out;
@@ -135,14 +199,16 @@ canvas {
 #home-wrap h1 {
 	font-size: 3.8em;
 	font-weight: 700;
+	color: #505050;
+	cursor: default;
 }
 
-#home-wrap:hover {
-	background: #505050;
-}
-
-#home-wrap:hover a {
-	color: #fff;
+#sub {
+	margin-top: 5px;
+	cursor: default;
+	display: block;
+	color: #505050;
+	text-align: right;
 }
 
 video#bgvid {
@@ -156,7 +222,7 @@ video#bgvid {
 	z-index: -1;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background: url('/portfolio/images/home-video.jpg') no-repeat;
+	background: url('../images/home-video.jpg') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -169,6 +235,8 @@ video#bgvid {
 	font-size: 1.7em;
 	padding: 10px 15px;
 	border: 2px solid #505050;
+	background: #505050;
+	color: #fff;
 	-webkit-transition: background .1s ease-in-out;
 	-moz-transition: background .1s ease-in-out;
 	-ms-transition: background .1s ease-in-out;
@@ -177,8 +245,8 @@ video#bgvid {
 }
 
 #workBtn:hover {
-	background: #505050;
-	color: #fff;
+	background: #fff;
+	color: #505050;
 	cursor: pointer;
 }
 
@@ -301,24 +369,21 @@ video#bgvid {
 /* ----- STATIC INNER HEADER ----- */
 
 #static-header {
-	min-height: 200px;
+	min-height: 155px;
 	position: relative;
 }
 
 #static-header-wrap {
 	position: absolute;
-	top: 50px;
+	top: 20px;
 	left: 10%;
 	
 }
 
-#static-header-wrap a {
+#static-header-wrap h1 {
 	color: #505050;
 	padding: 20px;
 	border: 2px solid #505050;
-}
-
-#static-header-wrap h1 {
 	font-size: 3.5em;
 }
 
@@ -356,7 +421,7 @@ video#bgvid {
 	-ms-transition: background .05s ease-in-out;
 	-o-transition: background .05s ease-in-out;
 	transition: background .05s ease-in-out;
-	cursor: url('/portfolio/images/plus.png'), pointer;
+	cursor: url('../images/plus.png'), pointer;
 }
 
 .full-case:hover {
@@ -497,5 +562,23 @@ footer p {
 	}
 
 }
+
+.si-icons span {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	margin: 40px 30px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.si-icons-hover span {
+	width: 128px;
+	height: 128px;
+	margin: 50px 40px;
+}
+
+.no-svg .si-icon-hamburger, .no-svg .si-icon-hamburger-cross { background-image: url('../images/hamburger.png') }
 
 
