@@ -9,7 +9,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                 'header': { templateUrl: 'views/home-header.html', 
                 			controller: function ($scope) {}
                             },
-                'content': { templateUrl: 'views/gallery.html', 
+                'content': { templateUrl: 'views/gallery.html',
                 			controller: function ($scope) {}
                             }
             }
@@ -137,6 +137,8 @@ myPortfolio.run(function($rootScope, $location, smoothAnchorScroll){
     $rootScope.$on('$stateChangeSuccess', function() {
        smoothAnchorScroll.scrollTo('start');
     });
+
+    $rootScope.offsetY = 0;
 
     $rootScope.gotoElement = function (eID){
       // set the location.hash to the id of

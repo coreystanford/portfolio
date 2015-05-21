@@ -78,6 +78,12 @@ header, main, footer {
 	width: 100%;
 }
 
+main {
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+}
+
 nav {
 	padding: 5px 0 0 0;
 	text-align: right;
@@ -90,6 +96,10 @@ nav h4 {
 
 /* ----- HOME HEADER ----- */
 
+canvas {
+	opacity: .6;
+}
+
 #home {
 	min-height: 500px;
 	position: relative;
@@ -101,7 +111,7 @@ nav h4 {
 #patternOverlay:before {
   content: "";
   background: url('/portfolio/images/bg.jpg');
-  opacity: 0.5;
+  opacity: 0.6;
   top: 0;
   left: 0;
   bottom: 0;
@@ -115,11 +125,11 @@ nav h4 {
 	left: 10%;
 	padding: 20px;
 	border: 2px solid #505050;
-	-webkit-transition: all .1s ease-in-out;
-	-moz-transition: all .1s ease-in-out;
-	-ms-transition: all .1s ease-in-out;
-	-o-transition: all .1s ease-in-out;
-	transition: all .1s ease-in-out;
+	-webkit-transition: background .1s ease-in-out;
+	-moz-transition: background .1s ease-in-out;
+	-ms-transition: background .1s ease-in-out;
+	-o-transition: background .1s ease-in-out;
+	transition: background .1s ease-in-out;
 }
 
 #home-wrap h1 {
@@ -143,12 +153,12 @@ video#bgvid {
 	min-height: 100%;
 	width: auto;
 	height: auto;
-	z-index: -100;
+	z-index: -1;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 	background: url('/portfolio/images/home-video.jpg') no-repeat;
 	background-size: cover;
-	z-index: -1;
+	background-attachment: fixed;
 }
 
 #workBtn {
@@ -159,11 +169,11 @@ video#bgvid {
 	font-size: 1.7em;
 	padding: 10px 15px;
 	border: 2px solid #505050;
-	-webkit-transition: all .1s ease-in-out;
-	-moz-transition: all .1s ease-in-out;
-	-ms-transition: all .1s ease-in-out;
-	-o-transition: all .1s ease-in-out;
-	transition: all .1s ease-in-out;
+	-webkit-transition: background .1s ease-in-out;
+	-moz-transition: background .1s ease-in-out;
+	-ms-transition: background .1s ease-in-out;
+	-o-transition: background .1s ease-in-out;
+	transition: background .1s ease-in-out;
 }
 
 #workBtn:hover {
@@ -187,7 +197,6 @@ video#bgvid {
 	min-height: 100%;
 	width: auto;
 	height: auto;
-	z-index: -100;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 	background-size: cover;
@@ -276,11 +285,11 @@ video#bgvid {
 	font-size: 1.7em;
 	padding: 10px 15px;
 	border: 2px solid #fff;
-	-webkit-transition: all .1s ease-in-out;
-	-moz-transition: all .1s ease-in-out;
-	-ms-transition: all .1s ease-in-out;
-	-o-transition: all .1s ease-in-out;
-	transition: all .1s ease-in-out;
+	-webkit-transition: background .1s ease-in-out;
+	-moz-transition: background .1s ease-in-out;
+	-ms-transition: background .1s ease-in-out;
+	-o-transition: background .1s ease-in-out;
+	transition: background .1s ease-in-out;
 }
 
 #scrollBtn:hover {
@@ -328,110 +337,26 @@ video#bgvid {
 
 #case-content {
 	margin: 30px 10%;
-	min-height: 400px;
+	min-height: 800px;
 }
 
 #gallery-wrap {
 	
 }
 
-.case { 
-	display: block;
-	width: 50%;
-	float: left;
-	background-color: #fff;
-	position: relative;
-	-webkit-transition: all .05s ease-in-out;
-	-moz-transition: all .05s ease-in-out;
-	-ms-transition: all .05s ease-in-out;
-	-o-transition: all .05s ease-in-out;
-	transition: all .05s ease-in-out;
-}
-
-.case img {
-	width: 100%;
-	-webkit-transition: all .05s ease-in-out;
-	-moz-transition: all .05s ease-in-out;
-	-ms-transition: all .05s ease-in-out;
-	-o-transition: all .05s ease-in-out;
-	transition: all .05s ease-in-out;
-}
-
-.case a {
-	color: #fff;
-}
-
-.case a:hover img {
-	background: #505050;
-}
-
-.case a h2 {
-	position: absolute;
-	top: -25px;
-	left: 10px;
-	right: 10px;
-	text-align: center;
-	opacity: 0;
-	z-index: -1;
-}
-
-.case a p {
-	position: absolute;
-	bottom: -25px;
-	left: 15px;
-	right: 15px;
-	text-align: center;
-	opacity: 0;
-	z-index: -1;
-	letter-spacing: 1px;
-	line-height: 1.4;
-}
-
-.case a:hover h2 {
-	top: 6%;
-	text-align: center;
-	opacity: 1;
-	z-index: 1;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-.case a:hover p {
-	bottom: 6%;
-	text-align: center;
-	opacity: 1;
-	z-index: 1;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
 /* ----- HORIZONTAL CASE ----- */
-
-.full-case .vancity, .full-case .jibe, .full-case .mics, .full-case .glassbellows {
-	opacity: 0;
-}
-
-.full-case:hover .vancity, .full-case:hover .jibe, .full-case:hover .mics, .full-case:hover .glassbellows {
-	opacity: 1;
-}
 
 .full-case { 
 	display: block;
 	width: 100%;
 	position: relative;
 	clear: both;
-	-webkit-transition: all .05s ease-in-out;
-	-moz-transition: all .05s ease-in-out;
-	-ms-transition: all .05s ease-in-out;
-	-o-transition: all .05s ease-in-out;
-	transition: all .05s ease-in-out;
-	cursor: url('/portfolio/images/plus.png'), default;
+	-webkit-transition: background .05s ease-in-out;
+	-moz-transition: background .05s ease-in-out;
+	-ms-transition: background .05s ease-in-out;
+	-o-transition: background .05s ease-in-out;
+	transition: background .05s ease-in-out;
+	cursor: url('/portfolio/images/plus.png'), pointer;
 }
 
 .full-case:hover {

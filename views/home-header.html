@@ -1,8 +1,9 @@
-<div id="home" class="home" resizable ng-style="resizeHeight" ng-class="aHome">
+<div id="home" class="home" resize-h ng-style="resizeHeight" parallax p-ratio="0.5" p-css="transform:translateY">
+	<canvas id="canvas" draw-canvas canvas-id="canvas" canvas-resize height="{{ canvasHeight }}" width="{{ canvasWidth }}"></canvas>
 	<div id='patternOverlay'>
 		<div id="home-wrap">
 			<h1><a ui-sref="home">Corey Stanford</a></h1>
-			<nav ng-style="navStyle">
+			<nav>
 				<h4><a ui-sref="about">About</a></h4>
 				<h4><a ui-sref="contact">Contact</a></h4>
 			</nav>
