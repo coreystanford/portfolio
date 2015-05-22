@@ -8,17 +8,13 @@ myPortfolio.run(function($rootScope, $location, smoothAnchorScroll){
        smoothAnchorScroll.scrollTo('start');
     });
 
+    // global offsets for the canvas element ( drawCanvas.js )
     $rootScope.offsetY = 0;
     $rootScope.menuOffsetY = 0;
 
     $rootScope.gotoElement = function (eID){
-      // set the location.hash to the id of
-      // the element you wish to scroll to.
       $location.hash(eID);
- 
-      // call $anchorScroll()
       smoothAnchorScroll.scrollTo(eID);
-      
     };
 
     $rootScope.menuBtn = true;

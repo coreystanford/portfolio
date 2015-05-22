@@ -1,3 +1,38 @@
 <div class="slim-content-wrap">
-	<h1>Contact</h1>
+
+	<div id="messages" ng-show="message">{{ message }}</div>
+
+	<!-- FORM --> 
+	<form> 
+		
+		<!-- NAME --> 
+		<div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }"> 
+			<label>Name</label> 
+			<input type="text" name="name" class="form-control" ng-model="formData.name" required> 
+			<p ng-show="formData.name.$invalid && !userForm.name.$pristine" class="help-block">Your name is required.</p> 
+		</div>
+
+		<!-- EMAIL -->
+		<div id="email-group" class="form-group" ng-class="{ 'has-error' : errorEmail }"> 
+			<label>Email</label> 
+			<input type="email" name="email" class="form-control" ng-model="formData.email" required>
+			<p ng-show="formData.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+		</div>
+
+		<!-- MESSAGE -->
+		<div id="message-group" class="form-group" ng-class="{ 'has-error' : errorMessage }"> 
+			<label>Message</label> 
+			<textarea name="message" class="form-control" rows="10" cols="50" required ng-model="formData.message"></textarea>
+			<p ng-show="formData.name.$invalid && !userForm.name.$pristine" class="help-block">A message is required.</p>
+		</div>
+
+		<!-- SUBMIT BUTTON -->
+		<button type="submit" class="btn btn-success btn-lg btn-block">Send</button>
+
+	</form>
+
+	<pre>
+		{{ formData }}
+	</pre>
+
 </div>

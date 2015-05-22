@@ -103,7 +103,8 @@
 			this.el.addEventListener( 'mouseout', toggleFn );
 		}
 		else {
-			this.el.addEventListener( this.clickevent, toggleFn );
+			//this.el.addEventListener( this.clickevent, toggleFn );
+			document.getElementById('menuBtn').addEventListener( this.clickevent, toggleFn );
 			document.getElementById('svgNav').addEventListener( this.clickevent, toggleFn );
 		}
 	};
@@ -144,5 +145,18 @@
 
 	// add to global namespace
 	window.svgIcon = svgIcon;
+
+	//*** Hamburger Icon Instantiation ***//
+		
+	// http://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/
+	(function() {
+		[].slice.call( document.querySelectorAll( '.si-icon-hamburger-cross' ) ).forEach( function( el ) {
+				var svgicon = new svgIcon( el, svgIconConfig, { 
+						easing : mina.elastic, 
+				  		speed: 600 ,
+				  		size: { w : 54, h : 64 }
+					} );
+		} );
+	})();
 
 })( window );

@@ -139,7 +139,7 @@ nav h4 a:hover {
 
 #menuBtn {
 	height: 62px;
-	width: 62px;
+	width: 72px;
 	position: absolute;
 	top: 42px;
 	right: 10%;
@@ -322,19 +322,11 @@ video#bgvid {
 	left: 10%;
 }
 
-#case-header-wrap a {
+#case-header-wrap {
 	color: #fff;
 	padding: 20px;
 	border: 2px solid #fff;
-}
-
-#case-header-wrap h1 {
-	font-size: 3.5em;
-}
-
-#case-header-wrap a:hover {
-	background: #fff;
-	color: #505050;
+	font-size: 2.5em;
 }
 
 #wrap-hover {
@@ -396,7 +388,7 @@ video#bgvid {
 /* ----- INNER CONTENT ----- */
 
 .slim-content-wrap {
-	margin: 30px 20%;
+	margin: 50px 20% 30px;
 	min-height: 400px;
 }
 
@@ -524,10 +516,11 @@ footer {
 }
 
 footer p {
-	height: 35px;
-	line-height: 35px;
+	height: 135px;
+	line-height: 135px;
 	margin: 0 10%;
 	color: #fff;
+	text-align: center;
 }
 
 
