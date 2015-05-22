@@ -6,24 +6,27 @@ myPortfolio.controller('ContactController', ['$scope', '$http', function($scope,
 
   // process the form
   $scope.processForm = function() {
-    $http({
-    method  : 'POST',
-    url     : 'mail.php',
-    data    : $.param($scope.formData),  // pass in data as strings
-    headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
-   })
-    .success(function(data) {
-      console.log(data);
 
-      if (!data.success) {
+    $http.post('sendMail.php', $scope.formData).success(function(data){
+      
+      console.log(data);
+      console.log(data.message);
+
+      if (data.success == false) {
         // if not successful, bind errors to error variables
-        $scope.errorName = data.errors.name;
-        $scope.errorEmail = data.errors.email;
-        $scope.errorMessage = data.errors.message;
+        //$scope.errorName = data.errors.name;
+        //$scope.errorEmail = data.errors.email;
+        //$scope.errorMessage = data.errors.message;
+        $scope.notice = data.message;
+        $scope.noticeStyle = {"color": "red"};
       } else {
         // if successful, bind success message to message
-        $scope.message = data.message;
+        $scope.notice = data.message;
+        $scope.noticeStyle = {"color": "green"};
       }
+
     });
-};
+
+  };
+
 }]);

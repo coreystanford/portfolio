@@ -22,7 +22,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                                 }
                             },
                 'content': { templateUrl: 'views/about.html', 
-                			controller: 'ContactController'
+                			controller: function ($scope) {}
                             }
             }
         })
@@ -35,7 +35,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                                 }
                             },
                 'content': { templateUrl: 'views/contact.html', 
-                			controller: function ($scope) {}
+                            controller: 'ContactController'
                             }
             }
         })

@@ -153,7 +153,7 @@
 		[].slice.call( document.querySelectorAll( '.si-icon-hamburger-cross' ) ).forEach( function( el ) {
 				var svgicon = new svgIcon( el, svgIconConfig, { 
 						easing : mina.elastic, 
-				  		speed: 600 ,
+				  		speed: 500 ,
 				  		size: { w : 54, h : 64 }
 					} );
 		} );

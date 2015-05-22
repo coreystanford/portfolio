@@ -1,6 +1,6 @@
 <div class="slim-content-wrap">
 
-	<div id="messages" ng-show="message">{{ message }}</div>
+	<div id="notices" ng-show="notice" ng-style="noticeStyle">{{ notice }}</div>
 
 	<!-- FORM --> 
 	<form> 
@@ -27,7 +27,7 @@
 		</div>
 
 		<!-- SUBMIT BUTTON -->
-		<button type="submit" class="btn btn-success btn-lg btn-block">Send</button>
+		<button type="submit" class="btn btn-success btn-lg btn-block" ng-click="processForm()">Send</button>
 
 	</form>
 
