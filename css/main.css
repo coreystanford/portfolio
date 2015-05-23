@@ -613,6 +613,26 @@ video#bgvid {
 	float: right;
 }
 
+#project img {
+	width: 100%;
+}
+
+.project-line {
+	background: #505050;
+	height: 1px;
+	width: 75%;
+	margin: 10px auto;
+	display: block;
+}
+
+.project-info-line {
+	background: #fff;
+	height: 1px;
+	width: 100%;
+	margin: 10px auto;
+	display: block;
+}
+
 
 /* ----- FOOTER ----- */
 
