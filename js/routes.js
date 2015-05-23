@@ -43,12 +43,13 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
             url: '/',
             views: {
                 'header': { templateUrl: 'views/home-header.html', 
-                            controller: function ($scope, $location) {
-                                    $location.hash('gallery-wrap');
+                            controller: function ($scope) {
                                 }
                             },
                 'content': { templateUrl: 'views/gallery.html', 
-                            controller: function ($scope) {}
+                            controller: function ($scope, smoothAnchorScroll) {
+                                smoothAnchorScroll.scrollTo('gallery-wrap');
+                            }
                             }
             }
         })
@@ -63,7 +64,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
                             },
                 'content': { templateUrl: 'views/vancityparks.html', 
                 			controller: function ($scope) {
-
+                                    $scope.btn = "vancityBtn";
                                 }
                             }
             }   
@@ -79,7 +80,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
                             },
                 'content': { templateUrl: 'views/jibe.html', 
                             controller: function ($scope) {
-
+                                    $scope.btn = "jibeBtn";
                                 }
                             }
             }   
@@ -95,7 +96,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
                             },
                 'content': { templateUrl: 'views/mics.html', 
                             controller: function ($scope) {
-                                    
+                                    $scope.btn = "micsBtn";
                                 }
                             }
             }   
@@ -111,7 +112,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
                             },
                 'content': { templateUrl: 'views/glassbellows.html', 
                             controller: function ($scope) {
-                                    
+                                    $scope.btn = "glassbellowsBtn";
                                 }
                             }
             }   
@@ -133,6 +134,6 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         });
 
     $urlRouterProvider.otherwise('/');
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
 
 }]);
