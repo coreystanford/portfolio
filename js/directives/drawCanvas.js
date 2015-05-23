@@ -15,7 +15,6 @@ myPortfolio.directive('drawCanvas', ['$window', '$rootScope', function($window, 
 			function handleMouseMove(e) {
 			    e.preventDefault();
 
-			    //console.log($rootScope.offsetY);
 			    if($rootScope.offsetY != 0){
 					var parseOpen = $rootScope.offsetY.split('(');
 					var parseClose = parseOpen[1].split(')');
@@ -23,8 +22,12 @@ myPortfolio.directive('drawCanvas', ['$window', '$rootScope', function($window, 
 					offsetNum = offsetNum.substring(0, offsetNum.length - 2);
 				}
 
+				//console.log(offsetNum);
+				//console.log(e.clientY);
 			    mouseX = parseInt(e.clientX);
 			    mouseY = parseInt(e.clientY) + parseInt(offsetNum) - parseInt($rootScope.menuOffsetY);
+
+			    //console.log("Mouse Position: " + mouseY);
 
 			    // Put your mousemove stuff here
 			    ctx.beginPath();

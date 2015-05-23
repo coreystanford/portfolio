@@ -20,7 +20,7 @@
             $body = "Message:\n" . $message . "\n\n"; 
             $host = "mail.coreystanford.com"; 
             $username = "corey@coreystanford.com"; 
-            $password = "Mre!jT7x"; 
+            $password = "password"; 
 
             $headers = array ('From' => $from, 
               'To' => $to, 
