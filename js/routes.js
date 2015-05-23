@@ -1,4 +1,4 @@
-myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider
         .state('home', {
@@ -133,5 +133,6 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
         });
 
     $urlRouterProvider.otherwise('/');
+    $locationProvider.html5Mode(true);
 
 }]);
