@@ -614,6 +614,11 @@ video#bgvid {
 	margin: 10px 0;
 }
 
+.project-info a {
+	text-decoration: underline;
+	color: #fff;
+}
+
 .project-info h4 {
 	margin: 15px 0 3px 0;
 }
@@ -648,7 +653,11 @@ video#bgvid {
 	margin: 25px auto;
 }
 
-#project #devices {
+#project h4 {
+	margin: 25px 0 10px 0;
+}
+
+#project .no-drop {
 	box-shadow: none;
 	width: 100%;
 }
