@@ -40,7 +40,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
             }
         })
         .state('gallery', {
-            url: '/',
+            url: '/work',
             views: {
                 'header': { templateUrl: 'views/home-header.html', 
                             controller: function ($scope) {
@@ -48,7 +48,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
                             },
                 'content': { templateUrl: 'views/gallery.html', 
                             controller: function ($scope, smoothAnchorScroll) {
-                                smoothAnchorScroll.scrollTo('gallery-wrap');
+                                smoothAnchorScroll.scrollTo('uiContent');
                             }
                             }
             }
