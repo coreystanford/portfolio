@@ -154,6 +154,28 @@ nav h5 a:hover {
 	border: 2px solid #fff;
 }
 
+/* ----- SVG ----- */
+
+.si-icons span {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	margin: 40px 30px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.si-icons-hover span {
+	width: 128px;
+	height: 128px;
+	margin: 50px 40px;
+}
+
+.no-svg .si-icon-hamburger, .no-svg .si-icon-hamburger-cross { background-image: url('../images/hamburger.png') }
+
+
+
 /* ----- HOME HEADER ----- */
 
 canvas {
@@ -673,27 +695,104 @@ footer #copyright {
 
 @media only screen and (max-width: 48em)
 {
+	#synopsis, #project {
+		width: 100%;
+	}
+
+	#project-info {
+		float: right;
+		width: 36%;
+		clear: both;
+		margin: 0 0 10px 25px;
+	}
+
+	#visit-site {
+		float: right;
+		width: 50%;
+		clear: both;
+	}
+}
+
+@media only screen and (max-width: 44em)
+{
+
+	#home-wrap h1 {
+		font-size: 2.9em;
+	}
 	
+	.full-case img {
+		width: 100%;
+	}
 
+	.one .title, .two .title {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.full-case h2 {
+		position: absolute;
+		top: 5%;
+		width: 100%;
+	}
+
+	.full-case h3 {
+		display: none;
+	}
+
+	.full-case p {
+		position: absolute;
+		bottom: 6%;
+		width: 100%;
+	}
 
 }
 
-.si-icons span {
-	display: inline-block;
-	width: 70px;
-	height: 70px;
-	margin: 40px 30px;
-	cursor: pointer;
-	background-repeat: no-repeat;
-	background-position: center center;
+@media only screen and (max-width: 32em)
+{
+
+	#home-wrap h1 {
+		font-size: 2.5em;
+	}
+
+	#home-wrap h4 {
+		font-size: 1.2em;
+	}
+
+	.full-case h2 {
+		top: 2%;
+		font-size: 1.8em;
+	}
+
+	.full-case p {
+		bottom: 2%;
+		font-size: 0.9em;
+	}
+
+	.title, .full-case img {
+		min-width: 0;
+	}
+
+	#case-header-wrap h1 {
+		font-size: 1.5em;
+	}
+
+	#project-info {
+		float: none;
+		width: 86%;
+		clear: both;
+		margin: 0;
+	}
+
+	#visit-site {
+		float: none;
+		width: 100%;
+		clear: both;
+	}
 }
 
-.si-icons-hover span {
-	width: 128px;
-	height: 128px;
-	margin: 50px 40px;
-}
-
-.no-svg .si-icon-hamburger, .no-svg .si-icon-hamburger-cross { background-image: url('../images/hamburger.png') }
 
 
