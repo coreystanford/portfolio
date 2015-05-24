@@ -606,18 +606,23 @@ video#bgvid {
     text-align: center;
 }
 
-#project-info {
+.project-info {
 	background: #505050;
 	color: #fff;
 	width: 86%;
 	padding: 1% 7% 7%;
+	margin: 10px 0;
 }
 
-#project-info h4 {
+.project-info h4 {
 	margin: 15px 0 3px 0;
 }
 
-#project-info h5 {
+.project-info h5 {
+	margin: 3px 0 3px 8px;
+}
+
+.project-info h5 {
 	margin: 3px 0 3px 8px;
 }
 
@@ -633,9 +638,18 @@ video#bgvid {
 #project {
 	width: 70%;
 	float: right;
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 #project img {
+	width: 90%;
+	box-shadow: 0px 0px 5px 1px #888888;
+	margin: 25px auto;
+}
+
+#project #devices {
+	box-shadow: none;
 	width: 100%;
 }
 
@@ -655,6 +669,38 @@ video#bgvid {
 	display: block;
 }
 
+#case-nav {
+	width: 30%;
+	float: right;
+	clear: both;
+}
+
+#case-nav #prev, #case-nav #next {
+	float: left;
+	width: 40%;
+	text-align: center;
+	color: #fff;
+	/*background: #505050;*/
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.2em;
+}
+
+#case-nav #go-home {
+	float: left;
+	width: 20%;
+	text-align: center;
+	color: #fff;
+	/*background: #505050;*/
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.4em;
+}
+
+/*#case-nav #prev:hover, #case-nav #next:hover, #case-nav #go-home:hover {
+	background: #fff;
+	color: #505050;
+}*/
 
 /* ----- FOOTER ----- */
 
@@ -699,17 +745,23 @@ footer #copyright {
 		width: 100%;
 	}
 
-	#project-info {
+	.project-info {
 		float: right;
 		width: 36%;
 		clear: both;
-		margin: 0 0 10px 25px;
+		margin: 10px 0 10px 25px;
 	}
 
 	#visit-site {
 		float: right;
 		width: 50%;
 		clear: both;
+	}
+
+	#case-nav {
+		width: 90%;
+		margin: 0 auto;
+		float: none;
 	}
 }
 
@@ -780,11 +832,11 @@ footer #copyright {
 		font-size: 1.5em;
 	}
 
-	#project-info {
+	.project-info {
 		float: none;
 		width: 86%;
 		clear: both;
-		margin: 0;
+		margin: 10px 0;
 	}
 
 	#visit-site {

@@ -1,8 +1,13 @@
-<div id="case-content">
+<div id="case-content" class="clearfix">
 	<div id="synopsis">
 		<a id="visit-site" ng-class="btn" target="_blank" href="http://www.coreystanford.com/dev/jibe">Visit Site <i class="fa fa-chevron-right"></i></a>
-		<div id="project-info">
-			<h4>Group Project</h4>
+		<div class="project-info">
+			<h4>Primary Goal:</h4>
+			<span class="project-info-line"></span>
+			<p>Build a platform where creatives can share their artwork and view other people's work easily.</p>
+		</div>
+		<div class="project-info">
+			<h4>Team Project</h4>
 			<h5>4 Members</h5>
 			<span class="project-info-line"></span>
 			<h4>My Roles: </h4>
@@ -32,7 +37,12 @@
 		</div>
 	</div>
 	<div id="project">
-	<img src="./images/jibe-devices.jpg" alt="Devices showing the responsive layout of the Jibe website">
+	<img id="devices" src="./images/jibe-devices.jpg" alt="Devices showing the responsive layout of the Jibe website">
 		<span class="project-line"></span>
+	</div>
+	<div id="case-nav">
+		<a id="prev" ng-class="btn" ui-sref="vancityparks"><i class="fa fa-chevron-left"></i> Prev</a>
+		<a id="go-home" ng-class="btn" ui-sref="home"><i class="fa fa-home"></i></a>
+		<a id="next" ng-class="btn" ui-sref="mics">Next <i class="fa fa-chevron-right"></i></a>
 	</div>
 </div>

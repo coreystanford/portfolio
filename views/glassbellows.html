@@ -1,7 +1,12 @@
-<div id="case-content">
+<div id="case-content" class="clearfix">
 	<div id="synopsis">
 		<a id="visit-site" ng-class="btn" target="_blank" href="http://www.coreystanford.com/dev/glassbellows">Visit Site <i class="fa fa-chevron-right"></i></a>
-		<div id="project-info">
+		<div class="project-info">
+			<h4>Primary Goal:</h4>
+			<span class="project-info-line"></span>
+			<p>Make a fluidly responsive website that showcases imagery well.</p>
+		</div>
+		<div class="project-info">
 			<h4>Solo Project</h4>
 			<span class="project-info-line"></span>
 			<h4>Technologies: </h4>
@@ -21,8 +26,17 @@
 		</div>
 	</div>
 	<div id="project">
-		<img src="./images/glassbellows-devices.jpg" alt="Devices showing the responsive layout of the Glass and Bellows website">
+		<img id="devices" src="./images/glassbellows-devices.jpg" alt="Devices showing the responsive layout of the Glass and Bellows website">
 		<span class="project-line"></span>
-
+		<img src="./images/gb1.jpg" alt="Mockup for the Homepage of Glass and Bellows">
+		<span class="project-line"></span>
+		<img src="./images/gb2.jpg" alt="Mockup for the About page of Glass and Bellows">
+		<span class="project-line"></span>
+		<img src="./images/gb3.jpg" alt="Mockup for the Gallery page of Glass and Bellows">
+	</div>
+	<div id="case-nav">
+		<a id="prev" ng-class="btn" ui-sref="mics"><i class="fa fa-chevron-left"></i> Prev</a>
+		<a id="go-home" ng-class="btn" ui-sref="home"><i class="fa fa-home"></i></a>
+		<a id="next" ng-class="btn" ui-sref="vancityparks">Next <i class="fa fa-chevron-right"></i></a>
 	</div>
 </div>

@@ -1,7 +1,12 @@
-<div id="case-content">
+<div id="case-content" class="clearfix">
 	<div id="synopsis">
 		<a id="visit-site" ng-class="btn" target="_blank" href="http://www.coreystanford.com/dev/vancityparks">Visit Site <i class="fa fa-chevron-right"></i></a>
-		<div id="project-info">
+		<div class="project-info">
+			<h4>Primary Goal:</h4>
+			<span class="project-info-line"></span>
+			<p>Combine various open data sources in a way that is useful to a particular demographic.</p>
+		</div>
+		<div class="project-info">
 			<h4>Solo Project</h4>
 			<span class="project-info-line"></span>
 			<h4>Technologies: </h4>
@@ -26,7 +31,12 @@
 		</div>
 	</div>
 	<div id="project">
-		<img src="./images/vancityparks-devices.jpg" alt="Devices showing the responsive layout of the VanCityParks website">
+		<img id="devices" src="./images/vancityparks-devices.jpg" alt="Devices showing the responsive layout of the VanCityParks website">
 		<span class="project-line"></span>
+	</div>
+	<div id="case-nav">
+		<a id="prev" ng-class="btn" ui-sref="glassbellows"><i class="fa fa-chevron-left"></i> Prev</a>
+		<a id="go-home" ng-class="btn" ui-sref="home"><i class="fa fa-home"></i></a>
+		<a id="next" ng-class="btn" ui-sref="jibe">Next <i class="fa fa-chevron-right"></i></a>
 	</div>
 </div>
