@@ -20,14 +20,14 @@
 <body id="start">
 
 	<nav ng-style="menu" id="svgNav">
-		<h5><a ui-sref="home" ng-click="toggleMenu()">Home</a></h5>
-		<h5><a ui-sref="gallery" ng-click="toggleMenu(); gotoElement(gallery-wrap);">Work</a></h5>
-		<h5><a ui-sref="about" ng-click="toggleMenu()">About</a></h5>
+		<h5><a ui-sref="home" ng-click="toggleMenu()" title="Home">Home</a></h5>
+		<h5><a ui-sref="gallery" ng-click="toggleMenu(); gotoElement(gallery-wrap);" title="Work">Work</a></h5>
+		<h5><a ui-sref="about" ng-click="toggleMenu()" title="About">About</a></h5>
 	</nav>
 
 	<div id="page-wrap" ng-style="pageMenuToggle">
 
-		<a ng-click="toggleMenu()" id="menuBtn"><span class="si-icon si-icons-easing si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span></a>
+		<a ng-click="toggleMenu()" id="menuBtn" title="Menu"><span class="si-icon si-icons-easing si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span></a>
 
 		<header>
 			<div ui-view="header" autoscroll="false" id="uiHeader"></div>
@@ -40,7 +40,7 @@
 		<footer class="clearfix">
 			<div id="content">
 				<p>416.458.8770</p>
-				<p><a href="mailto:corey@coreystanford.com">corey@coreystanford.com</a></p>
+				<p><a href="mailto:corey@coreystanford.com" title="Send an email to Corey Stanford">corey@coreystanford.com</a></p>
 				<p id="copyright">&copy; 2015 Corey Stanford</p>
 			</div>
 		</footer><!-- /footer -->
