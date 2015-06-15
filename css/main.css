@@ -72,6 +72,10 @@ p { font-size: 1.2em;line-height: 1.22; }
 	height: 0;
 }
 
+strong {
+	font-weight: bold;
+}
+
 /* ----- MAIN STYLING ----- */
 
 header, main, footer {
@@ -390,6 +394,11 @@ video#bgvid {
 #about h3 {
 	padding-bottom: 13px;
 	font-size: 1.27em;
+}
+
+#about h4 {
+	padding: 13px 15% 25px;
+	text-align: center;
 }
 
 #about p {
