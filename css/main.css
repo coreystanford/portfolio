@@ -886,5 +886,67 @@ footer #copyright {
 	}
 }
 
+#clear {
+	
+}
 
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
+  20%, 60% {
+    -webkit-transform: translate3d(0, -6px, 0);
+    transform: translate3d(0, -6px, 0);
+  }
+
+  40%, 80% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  20%, 60% {
+    -webkit-transform: translate3d(0, -6px, 0);
+    transform: translate3d(0, -6px, 0);
+  }
+
+  40%, 80% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+.shakeOne {
+  -webkit-animation: shake .3s;
+  animation: shake .3s;
+}
+
+#clear {
+	position: absolute;
+	bottom: 40px;
+	right: 10%;
+	z-index: 10;
+	font-size: 1em;
+	opacity: .85;
+	padding: 7px 15px;
+	border: 1px solid #505050;
+	background: #fff;
+	color: #505050;
+	-webkit-transition: background .15s ease-in-out;
+	-moz-transition: background .15s ease-in-out;
+	-ms-transition: background .15s ease-in-out;
+	-o-transition: background .15s ease-in-out;
+	transition: background .15s ease-in-out;
+}
+#clear:hover {
+	background: transparent;
+	cursor: pointer;
+}

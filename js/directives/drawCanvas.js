@@ -2,13 +2,15 @@ myPortfolio.directive('drawCanvas', ['$window', '$rootScope', function($window, 
     return {
     	restrict: 'A',
         scope: {
-          canvasId: '@'
+          canvasId: '@',
+          clearCanvasId: '@'
         },
         link : function($scope, element, attrs) {
 
         	// http://jsfiddle.net/m1erickson/hzNg4/
 
         	var canvas = document.getElementById($scope.canvasId);
+        	var clearCanvas = document.getElementById($scope.canvasId);
 			var ctx = canvas.getContext("2d");
 			var mouseX, mouseY, startX, startY, offsetNum = 0;
 
@@ -40,7 +42,14 @@ myPortfolio.directive('drawCanvas', ['$window', '$rootScope', function($window, 
 
 			}
 
+			function clearThisCanvas(){
+				
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+			}
+
 			$window.addEventListener('mousemove', handleMouseMove);
+			clearCanvas.addEventListener('click', clearThisCanvas);
 
         }
     }

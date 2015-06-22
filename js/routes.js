@@ -5,7 +5,9 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
             url: '/',
             views: {
                 'header': { templateUrl: 'views/home-header.html', 
-                			controller: function ($scope) {}
+                			controller: function ($scope) {
+
+                                }
                             },
                 'content': { templateUrl: 'views/gallery.html',
                 			controller: function ($scope) {}
@@ -48,8 +50,8 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
                             },
                 'content': { templateUrl: 'views/gallery.html', 
                             controller: function ($scope, smoothAnchorScroll) {
-                                smoothAnchorScroll.scrollTo('uiContent');
-                            }
+                                    smoothAnchorScroll.scrollTo('uiContent');
+                                }
                             }
             }
         })
@@ -134,6 +136,6 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         });
 
     $urlRouterProvider.otherwise('/');
-    //$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 
 }]);
