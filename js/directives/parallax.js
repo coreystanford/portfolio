@@ -52,6 +52,7 @@ myPortfolio.directive('parallax', ['$window', '$rootScope', function ($window, $
           $rootScope.offsetY = resultVal;
 
           element.css(cssKey, resultVal);
+          if(cssKey === 'transform') element.css("-webkit-" + cssKey, resultVal);
           element.css('opacity', pFade);
         };
 
