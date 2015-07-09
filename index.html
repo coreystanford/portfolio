@@ -27,6 +27,8 @@
 		<h5><a ui-sref="about" ng-click="toggleMenu()" title="About">About</a></h5>
 	</nav>
 
+	<div ng-if="loading" id="preloading"><h1 id="preloader">loading...</h1></div>
+
 	<div id="page-wrap" ng-style="pageMenuToggle">
 
 		<a ng-click="toggleMenu()" id="menuBtn" title="Menu"><span class="si-icon si-icons-easing si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span></a>

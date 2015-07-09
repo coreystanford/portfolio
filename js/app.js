@@ -4,8 +4,11 @@ var myPortfolio = angular.module('myPortfolio', ['ui.router']);
 // http://stackoverflow.com/questions/18880737/how-do-i-use-rootscope-in-angular-to-store-variables
 myPortfolio.run(function($rootScope, $location, smoothAnchorScroll){
 
+    $rootScope.loading = true;
+
     $rootScope.$on('$stateChangeSuccess', function() {
-       smoothAnchorScroll.scrollTo('start');
+        $rootScope.loading = false;
+        smoothAnchorScroll.scrollTo('start');
     });
 
     // global offsets for the canvas element ( drawCanvas.js )

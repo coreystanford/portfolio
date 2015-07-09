@@ -78,6 +78,80 @@ strong {
 
 /* ----- MAIN STYLING ----- */
 
+#preloading {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	z-index: 11;
+	background-color: #fff;
+}
+
+	#preloader,
+	#preloader:before,
+	#preloader:after {
+	  background: #505050;
+	  -webkit-animation: load1 .75s infinite ease-in-out;
+	  animation: load1 .75s infinite ease-in-out;
+	  width: 1em;
+	  height: 4em;
+	}
+	#preloader:before,
+	#preloader:after {
+	  position: absolute;
+	  top: 0;
+	  content: '';
+	}
+	#preloader:before {
+	  left: -1.5em;
+	  -webkit-animation-delay: -0.32s;
+	  animation-delay: -0.32s;
+	}
+	#preloader {
+	  text-indent: -9999em;
+	  position: relative;
+	  font-size: 11px;
+	  margin-top: 25%;
+	  -webkit-transform: translateZ(0);
+	  -ms-transform: translateZ(0);
+	  transform: translateZ(0);
+	  -webkit-animation-delay: -0.16s;
+	  animation-delay: -0.16s;
+	}
+	#preloader:after {
+	  left: 1.5em;
+	}
+	@-webkit-keyframes load1 {
+	  0%,
+	  80%,
+	  100% {
+	    box-shadow: 0 0 #505050;
+	    height: 4em;
+	  }
+	  30% {
+	    box-shadow: 0 -1.25em #505050;
+	    height: 4.75em;
+	  }
+	}
+	@keyframes load1 {
+	  0%,
+	  80%,
+	  100% {
+	    box-shadow: 0 0 #505050;
+	    height: 4em;
+	  }
+	  30% {
+	    box-shadow: 0 -1.25em #505050;
+	    height: 4.75em;
+	  }
+	}
+
+
 header, main, footer {
 	width: 100%;
 }
