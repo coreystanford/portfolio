@@ -533,6 +533,17 @@ video#bgvid {
 	z-index: -1;
 }
 
+.balloonroom, .full-case .gal-balloonroom {
+	background: #1ed2ed; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #1ed2ed 0%, #1ed2ed 66%, #1ed2ed 67%, #ed6c1e 67%, #ed6c1e 71%, #40ed1e 71%, #40ed1e 73%, #40ed1e 73%, #40ed1e 74%, #ed1e32 74%, #ed1e32 78%, #ed1eba 78%, #ed1eba 83%, #edeb1e 83%, #edeb1e 86%, #1ed2ed 86%, #1ed2ed 101%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1ed2ed), color-stop(66%,#1ed2ed), color-stop(67%,#1ed2ed), color-stop(67%,#ed6c1e), color-stop(71%,#ed6c1e), color-stop(71%,#40ed1e), color-stop(73%,#40ed1e), color-stop(73%,#40ed1e), color-stop(74%,#40ed1e), color-stop(74%,#ed1e32), color-stop(78%,#ed1e32), color-stop(78%,#ed1eba), color-stop(83%,#ed1eba), color-stop(83%,#edeb1e), color-stop(86%,#edeb1e), color-stop(86%,#1ed2ed), color-stop(101%,#1ed2ed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #1ed2ed 0%,#1ed2ed 66%,#1ed2ed 67%,#ed6c1e 67%,#ed6c1e 71%,#40ed1e 71%,#40ed1e 73%,#40ed1e 73%,#40ed1e 74%,#ed1e32 74%,#ed1e32 78%,#ed1eba 78%,#ed1eba 83%,#edeb1e 83%,#edeb1e 86%,#1ed2ed 86%,#1ed2ed 101%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #1ed2ed 0%,#1ed2ed 66%,#1ed2ed 67%,#ed6c1e 67%,#ed6c1e 71%,#40ed1e 71%,#40ed1e 73%,#40ed1e 73%,#40ed1e 74%,#ed1e32 74%,#ed1e32 78%,#ed1eba 78%,#ed1eba 83%,#edeb1e 83%,#edeb1e 86%,#1ed2ed 86%,#1ed2ed 101%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #1ed2ed 0%,#1ed2ed 66%,#1ed2ed 67%,#ed6c1e 67%,#ed6c1e 71%,#40ed1e 71%,#40ed1e 73%,#40ed1e 73%,#40ed1e 74%,#ed1e32 74%,#ed1e32 78%,#ed1eba 78%,#ed1eba 83%,#edeb1e 83%,#edeb1e 86%,#1ed2ed 86%,#1ed2ed 101%); /* IE10+ */
+	background: linear-gradient(135deg, #1ed2ed 0%,#1ed2ed 66%,#1ed2ed 67%,#ed6c1e 67%,#ed6c1e 71%,#40ed1e 71%,#40ed1e 73%,#40ed1e 73%,#40ed1e 74%,#ed1e32 74%,#ed1e32 78%,#ed1eba 78%,#ed1eba 83%,#edeb1e 83%,#edeb1e 86%,#1ed2ed 86%,#1ed2ed 101%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ed2ed', endColorstr='#1ed2ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 .vancity, .full-case .gal-vancity {
 	background: #e6f3f7; /* Old browsers */
 	background: -moz-linear-gradient(-45deg,  #e6f3f7 7%, #90cb44 7%, #90cb44 7%, #90cb44 34%, #1385ac 34%, #1385ac 100%); /* FF3.6+ */
@@ -577,6 +588,14 @@ video#bgvid {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d9d9', endColorstr='#40a6f4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.balloonroomBtn {
+	background: #1ed2ed;
+}
+
+.balloonroomBtn:hover {
+	background: #ed6c1e;
+}
+
 .vancityBtn {
 	background: #90cb44;
 }
@@ -609,7 +628,7 @@ video#bgvid {
 	background: #40a6f4;
 }
 
-.full-case:hover .gal-vancity, .full-case:hover .gal-mics, .full-case:hover .gal-jibe, .full-case:hover .gal-glassbellows {
+.full-case:hover .gal-vancity, .full-case:hover .gal-mics, .full-case:hover .gal-jibe, .full-case:hover .gal-glassbellows, .full-case:hover .gal-balloonroom {
 	opacity: .85;
 }
 
