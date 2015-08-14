@@ -55,6 +55,22 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
                             }
             }
         })
+        .state('valhaven', {
+            url: '/valhaven',
+            views: {
+                'header': { templateUrl: 'views/case-header.html', 
+                            controller: function ($scope) {
+                                    $scope.title = 'Balloons';
+                                    $scope.caseBG = 'valhaven';
+                                }
+                            },
+                'content': { templateUrl: 'views/valhaven.html', 
+                            controller: function ($scope) {
+                                    $scope.btn = "valhavenBtn";
+                                }
+                            }
+            }   
+        })
         .state('balloons', {
             url: '/balloons',
             views: {

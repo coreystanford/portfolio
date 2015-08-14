@@ -1,0 +1,73 @@
+<div id="case-content" class="clearfix">
+	<div id="synopsis">
+		<a id="visit-site" ng-class="btn" target="_blank" href="http://www.coreystanford.com/dev/vancityparks" title="VanCityParks - Vancouver Web Service website">Visit Site <i class="fa fa-chevron-right"></i></a>
+		<div class="project-info">
+			<h4>Primary Goal:</h4>
+			<span class="project-info-line"></span>
+			<p>Combine various open data sources in a way that is useful to a particular demographic.</p>
+		</div>
+		<div class="project-info">
+			<h4>Team Project</h4>
+			<h5>10 Members</h5>
+			<span class="project-info-line"></span>
+			<h4>My Role: </h4>
+			<ul>
+				<li><h5>Lead Developer</h5></li>
+			</ul>
+			<span class="project-info-line"></span>
+			<h4>Technologies: </h4>
+			<ul>
+				<li><h5>PHP</h5></li>
+				<li><h5>JavaScript</h5></li>
+				<li><h5>jQuery</h5></li>
+				<li><h5>HTML</h5></li>
+				<li><h5>CSS</h5></li>
+			</ul>
+			<span class="project-info-line"></span>
+			<h4>Software: </h4>
+			<ul>
+				<li><h5>Sublime Text 3</h5></li>
+				<li><h5>Photoshop CS6</h5></li>
+				<li><h5>Miro Video Converter</h5></li>
+			</ul>
+			<span class="project-info-line"></span>
+			<h4>Timeframe: </h4>
+			<h5>5 weeks</h5>
+		</div>
+		<a id="visit-site" ng-class="btn" target="_blank" href="https://github.com/coreystanford/VanCityParks" title="VanCityParks - Vancouver Web Service source code">View Source <i class="fa fa-chevron-right"></i></a>
+		<div id="project-desc">
+			<p>This project uses three data sources from <a href="http://data.vancouver.ca/datacatalogue/index.htm" title="Vancouver Open Data" target="_blank">Vancouver Open Data</a>. The data is combined to produce a map of parks in Vancouver with details about the park status, the features of the park (including washrooms!), and hooks into the Google Maps JavaScript API in order to provide directions to the location of the selected park.</p>
+
+			<p>The Google Maps API also allows for HTML5 location detection. If enabled, the user's location is automatically plotted as the starting point on the map when a park is selected. The individual can then choose the mode of transportation they want to use, and the map updates with a new route, and an estimated duration.</p>
+
+			<p>The search functionality of the site is achieved by combining AngularJS to watch the text field for changes, which executes an AJAX call 450ms after a change has been registered (via the $http service). This call is then processed by PHP to parse select properties of a JSON file generated from the open data. The longitude and latitude are returned and plotted on the map, and updated in the list, giving the user multiple interaction avenues. An additional AJAX request is sent when a park is selected, whereafter the search window adapts to include additional information about the selected park in a smooth horizontal transition achieved using ng-style attributes.</p>
+
+			<span class="project-line"></span>
+
+			<h4>Key Challenge:</h4>
+
+			<p>A key challenge during this project was getting the unique identification key for each park to pass nicely from the JSON files, through the JavaScript, to the HTML and PHP, and back again.</p>
+		</div>
+	</div>
+	<div id="project">
+		<img class="no-drop" src="./images/vancityparks-devices.jpg" alt="Devices showing the responsive layout of the VanCityParks website">
+		<span class="project-line"></span>
+		<h4>Main Park Map</h4>
+		<img src="./images/vancity-home.jpg" alt="Main park map for VanCityParks">
+		<span class="project-line"></span>
+		<h4>Off-Canvas Menu</h4>
+		<img src="./images/vancity-menu.jpg" alt="Off-canvas menu for VanCityParks">
+		<span class="project-line"></span>
+		<h4>Park Information & Directions</h4>
+		<img src="./images/vancity-info.jpg" alt="Park information and directions for VanCityParks">
+		<span class="project-line"></span>
+		<h4>Dynamic Search & Directions</h4>
+		<img src="./images/vancity-search.jpg" alt="Dynamic search and directions for VanCityParks">
+		<img src="./images/vancity-search-info.jpg" alt="Dynamic search and directions for VanCityParks">
+	</div>
+	<div id="case-nav">
+		<a id="prev" ng-class="btn" ui-sref="balloons" title="Previous"><i class="fa fa-chevron-left"></i> Prev</a>
+		<a id="go-home" ng-class="btn" ui-sref="home" title="Home"><i class="fa fa-home"></i></a>
+		<a id="next" ng-class="btn" ui-sref="jibe" title="Next">Next <i class="fa fa-chevron-right"></i></a>
+	</div>
+</div>
