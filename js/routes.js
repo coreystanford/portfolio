@@ -60,7 +60,7 @@ myPortfolio.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
             views: {
                 'header': { templateUrl: 'views/case-header.html', 
                             controller: function ($scope) {
-                                    $scope.title = 'Balloons';
+                                    $scope.title = 'Visit Valhaven';
                                     $scope.caseBG = 'valhaven';
                                 }
                             },
